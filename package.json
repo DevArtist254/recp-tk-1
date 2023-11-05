@@ -2,11 +2,19 @@
   "name": "recipe-app-take-1",
   "version": "1.0.0",
   "description": "Hello world",
-  "main": "index.html",
+  "private": true,
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "serve": "webpack",
+    "style:css": "sass --watch ./src/sass/main.scss ./dist/style.css"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
